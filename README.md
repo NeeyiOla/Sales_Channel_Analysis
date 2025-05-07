@@ -2,7 +2,7 @@
 
 ## Contoso Retail: Competitive Sales Channel & Marketing Analysis
 
-![Front Page Cover Images](Assets_Folder/Images/Contoso_semantic_model.png)
+![Front Page Cover Images](Assets_Folder/Images/Microsoft_SSMS_to_PowerBI.png)
 
 # Table of Content
 - [Project Title](#Project-Title)
@@ -569,7 +569,7 @@ Geographic sales patterns show where to allocate resources. For instance, North 
 ## DASHBOARD 3
 ### COMPETITIVE SALES CHANNEL ANALYSIS REPORT (Profit Margin)
 
-![Dashboard 1](Assets_FolderImages/Store_Profit_Margin_Dashbaord.png)
+![Dashboard 1](Assets_Folder/Images/Store_Profit_Margin_Dashbaord.png)
 
 Focus: Profit Margin (%) | Time Period: 2007–2009
 
