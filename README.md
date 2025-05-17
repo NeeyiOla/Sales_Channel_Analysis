@@ -101,14 +101,18 @@ This project resolves these issues by delivering a suite of Power BI dashboards 
 
 ### Data Source
 
-### Microsoft SQL Server Management Studio (SSMS) Structure  
+### ContosoRetailDW Database Structure
+**ContosoRetailDW** is a sample data warehouse database provided by Mircosoft, designed to support intelligence and analytics scenarios. It represent a a fictional retail company, **Contoso**, and includes data  relevant to sales,  products, iventory, promotions, and customer behaviour.  
 
-![Contoso ER Diagram](
+The database follows a star schema structure, commonly used in data warehousing, with FactSales, FactInventory, FactSalesOnline but for this project only FactSales sales table was query for our analysis which contain record of measurable business event, and dimension tables like DimProduct, DimCustomer, DimStore, and DimDate that provide contextual information.
 
-    ## Add a picture of each table and ERD diagram, but mainly picture of tables that was used.
+
+
+![Contoso ER Diagram](Assets_Folder/Images/Contoso_ER_Diagram.png)
+
 
 #### Fact Table
-- FactSales Table: ChaneelKey, DateKey, DiscountAmount, DiscountQuantity, Gross Profit, Gross-Margin, Net Sales, ProductKey, Profit Margin, ReturnAmount, ReturnQauntity, Sales, SalesQuantity, StoreKey, Subcategory_Channel, TotalCost, UnitCost, and UnitPrice.  
+- **FactSales Table:** ChaneelKey, DateKey, DiscountAmount, DiscountQuantity, Gross Profit, Gross-Margin, Net Sales, ProductKey, Profit Margin, ReturnAmount, ReturnQauntity, Sales, SalesQuantity, StoreKey, Subcategory_Channel, TotalCost, UnitCost, and UnitPrice.  
 
 | Column Name | Data Type | Description |
 | --- | --- | --- |
@@ -137,7 +141,7 @@ This project resolves these issues by delivering a suite of Power BI dashboards 
 
 #### Dimension Tables
 
-- DimProductCategory Table: Including ProductCategoryDecription, ProductCategoryKey, ProductCategoryLabel, and ProductCategoryName.  
+- **DimProductCategory Table:** Including ProductCategoryDecription, ProductCategoryKey, ProductCategoryLabel, and ProductCategoryName.  
 
 | Column Name | Data Type | Description |
 | --- | --- | --- |
@@ -147,7 +151,7 @@ This project resolves these issues by delivering a suite of Power BI dashboards 
 | ProductCategoryDescription | Text | short note to decribe each product category |  
 
 
-- DimProductSubcategory Table: ProductCategoryKey, ProductSubcategoryDescrition, ProductSubcategoryKey, ProductSubcategoryLabel, and ProductSubcategoryName.  
+- **DimProductSubcategory Table:** ProductCategoryKey, ProductSubcategoryDescrition, ProductSubcategoryKey, ProductSubcategoryLabel, and ProductSubcategoryName.  
 
 | Column Name | Data Type | Description |
 | --- | --- | --- |
@@ -157,7 +161,7 @@ This project resolves these issues by delivering a suite of Power BI dashboards 
 | ProductCategoryKey | Whole Number | Foreign key referencing  product category table (ProductCategoryKey) |  
 
 
-- DimProduct Table: AvailableForSaleDate, BrandName, ColorID, ColorName, Manufacturer, ProductDescription, ProductKey, ProductLabel, and ProductName.  
+- **DimProduct Table:** AvailableForSaleDate, BrandName, ColorID, ColorName, Manufacturer, ProductDescription, ProductKey, ProductLabel, and ProductName.  
 
 | Column Name | Data Type | Description |
 | --- | --- | --- |
@@ -179,7 +183,7 @@ This project resolves these issues by delivering a suite of Power BI dashboards 
 | Status | Text | (Delete) not needed |  
 
 
-- DimChannel: ChannelDescription, ChannelKey, ChannelLabel, ChannelName, LoadDate, and UpdateDate.  
+- **DimChannel:** ChannelDescription, ChannelKey, ChannelLabel, ChannelName, LoadDate, and UpdateDate.  
 
 | Column Name | Data Type | Description |
 | --- | --- | --- |
@@ -191,7 +195,7 @@ This project resolves these issues by delivering a suite of Power BI dashboards 
 | UpdateDate | Date/Time | (delete) not needed |  
 
 
-- DimGeography Table:  ContinentName, GeographyKey, Region-State/Province, RegionCountryName, StateProvinceName.  
+- **DimGeography Table:**  ContinentName, GeographyKey, Region-State/Province, RegionCountryName, StateProvinceName.  
 
 | Column Name | Data Type | Description |
 | --- | --- | --- |
@@ -201,7 +205,7 @@ This project resolves these issues by delivering a suite of Power BI dashboards 
 | RegionCountryName | Text | store or customer countryname |  
 
 
-- DimStore Table: AddressLine1, CloseDate, EmployeeCount, GeographyKey, Geolocation, Geometry, LastRemodelDate, OpenDate, Satus, StoreKey, StoreManager, StoreNmae, and Storetype.  
+- **DimStore Table:** AddressLine1, CloseDate, EmployeeCount, GeographyKey, Geolocation, Geometry, LastRemodelDate, OpenDate, Satus, StoreKey, StoreManager, StoreNmae, and Storetype.  
 
 | Column Name | Data Type | Description |
 | --- | --- | --- |
@@ -222,7 +226,7 @@ This project resolves these issues by delivering a suite of Power BI dashboards 
 This table is not needed for now but for future purpose is would be needed so in that case while cleaning transforming data, the table would not be loaded in the report pane.  
 
 #### Time Intelligence Date Table
-- Date Table: Date, FY-Month, FY-Quarters, FY-Year, Month, Month Name, Month-Short, Month-VSH, Period, Quarter, and Year.  
+- **Date Table:** Date, FY-Month, FY-Quarters, FY-Year, Month, Month Name, Month-Short, Month-VSH, Period, Quarter, and Year.  
 
 | Column Name | Data Type | Description |
 | --- | --- | --- |
@@ -424,6 +428,11 @@ RETURN
 - Published the reports to Power BI Service for stakeholder access and automated refresh.
 - Set up appropriate workspace permissions and dashboard sharing.
 
+##### link to power BI service !!!
+Using the link below will enable to gain full access to the interactive reports and semantic model behind the success of this project.
+
+[![View Report](https://img.shields.io/badge/View%20Power%20BI%20Report-Click%20Here-blue)](https://app.powerbi.com/view?r=eyJrIjoiYTI1ZTA1OGYtM2QyZS00MTczLWI2ZWEtNjU1OTJiOWYzYWJjIiwidCI6IjJhMzA1NzYxLWY5N2QtNDdlNC04ZjBmLWE2YzIwYzNmZWI3MyIsImMiOjh9)
+
 #### Documentation & Version Control  
 
 - Documented the entire process including the model schema, DAX measures, and dashboard usage instructions.
@@ -514,7 +523,7 @@ Total Sales by Product and Channel
     - Plan promotions and inventory spikes for store sales in Q4.
     - Launch mid-year campaigns to accelerate online sales momentum.
 
-## Dashboard 2
+### DASHBOARD 2
 ### COMPETITIVE SALES CHANNEL ANALYSIS REPORT (Sales by country & Brand(Top5))
 
 ![Dashboard 1](Assets_Folder/Images/DashBoard_2.png)
@@ -568,7 +577,7 @@ Geographic sales patterns show where to allocate resources. For instance, North 
 5. Evaluate Brand Penetration:
     - Contoso is a top brand across channels—identify what’s working and apply best practices to underperforming brands.
 
-## DASHBOARD 3
+### DASHBOARD 3
 ### COMPETITIVE SALES CHANNEL ANALYSIS REPORT (Profit Margin)
 
 ![Dashboard 1](Assets_Folder/Images/Store_Profit_Margin_Dashbaord.png)
