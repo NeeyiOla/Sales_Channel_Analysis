@@ -103,6 +103,8 @@ This project resolves these issues by delivering a suite of Power BI dashboards 
 
 ### Microsoft SQL Server Management Studio (SSMS) Structure  
 
+![Contoso ER Diagram](
+
     ## Add a picture of each table and ERD diagram, but mainly picture of tables that was used.
 
 #### Fact Table
