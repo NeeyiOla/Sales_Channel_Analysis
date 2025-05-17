@@ -429,7 +429,7 @@ RETURN
 - Set up appropriate workspace permissions and dashboard sharing.
 
 ##### link to power BI service !!!
-Using the link below will enable to gain full access to the interactive reports and semantic model behind the success of this project.
+Using the link below will enable you to gain full access to the interactive reports and semantic model behind the success of this project.
 
 [![View Report](https://img.shields.io/badge/View%20Power%20BI%20Report-Click%20Here-blue)](https://app.powerbi.com/view?r=eyJrIjoiYTI1ZTA1OGYtM2QyZS00MTczLWI2ZWEtNjU1OTJiOWYzYWJjIiwidCI6IjJhMzA1NzYxLWY5N2QtNDdlNC04ZjBmLWE2YzIwYzNmZWI3MyIsImMiOjh9)
 
